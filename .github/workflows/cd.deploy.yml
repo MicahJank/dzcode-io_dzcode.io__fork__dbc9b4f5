@@ -35,7 +35,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: build output (ubuntu-latest, 20)
+          name: build output (ubuntu-latest, 22.23.4)
       - name: "SSH"
         uses: shimataro/ssh-key-action@v2
         with:

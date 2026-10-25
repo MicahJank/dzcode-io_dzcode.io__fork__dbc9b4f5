@@ -26,7 +26,7 @@
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
     "cpy-cli": "^5.0.0",
-    "cypress": "^13.14.1",
+    "cypress": "16.2.0",
     "daisyui": "^4.12.10",
     "globals": "^15.8.0",
     "postcss": "^8.4.39",

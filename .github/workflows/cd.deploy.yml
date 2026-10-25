@@ -9,7 +9,7 @@ jobs:
   build:
     uses: ./.github/workflows/ci.reusable.build.yml
     with:
-      node-version: "20"
+      node-version: '22.23.4'
       os: "ubuntu-latest"
 
   bundle-deploy:
@@ -29,13 +29,13 @@ jobs:
       - name: "Nodejs"
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '22.23.4'
           cache: "npm"
       - run: npm ci
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: build output (ubuntu-latest, 20)
+          name: build output (ubuntu-latest, 22.23.4)
       - name: "SSH"
         uses: shimataro/ssh-key-action@v2
         with:

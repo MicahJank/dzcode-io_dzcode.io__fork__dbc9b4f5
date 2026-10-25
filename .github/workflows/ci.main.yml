@@ -9,33 +9,33 @@ jobs:
   build:
     uses: ./.github/workflows/ci.reusable.build.yml
     with:
-      node-version: "20"
+      node-version: '22.23.4'
       os: "ubuntu-latest"
 
   test-coverage:
     needs: build
     uses: ./.github/workflows/ci.reusable.test-coverage.yml
     with:
-      node-version: "20"
+      node-version: '22.23.4'
       os: "ubuntu-latest"
 
   lint:
     needs: build
     uses: ./.github/workflows/ci.reusable.lint.yml
     with:
-      node-version: "20"
+      node-version: '22.23.4'
       os: "ubuntu-latest"
 
   misc:
     needs: build
     uses: ./.github/workflows/ci.reusable.misc.yml
     with:
-      node-version: "20"
+      node-version: '22.23.4'
       os: "ubuntu-latest"
 
   test-e2e:
     needs: build
     uses: ./.github/workflows/ci.reusable.test-e2e.yml
     with:
-      node-version: "20"
+      node-version: '22.23.4'
       os: "ubuntu-latest"
